@@ -1,0 +1,45 @@
+{
+  "name": "page-trackr",
+  "description": "Page.js middleware that Trackr autorun helpers to context.",
+  "author": "Tyler Johnson <tyler@tylerjohnson.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyler-johnson/page-trackr.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/ test/",
+    "build": "make clean && make",
+    "test": "make test",
+    "prepublish": "npm run build",
+    "autorelease": "autorelease pre && npm publish && autorelease post"
+  },
+  "dependencies": {
+    "trackr": "^2.0.2"
+  },
+  "devDependencies": {
+    "autorelease": "^1.7.1",
+    "autorelease-github": "^1.2.0",
+    "autorelease-travis": "^1.2.1",
+    "babel-eslint": "^6.0.4",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "browserify": "^13.0.1",
+    "eslint": "^2.12.0",
+    "page": "^1.7.1",
+    "rollup": "^0.31.1",
+    "rollup-plugin-babel": "^2.5.1",
+    "rollup-plugin-json": "^2.0.0",
+    "tape": "^4.5.1",
+    "tape-run": "^2.1.4"
+  },
+  "keywords": [
+    "page",
+    "react",
+    "render"
+  ],
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ]
+}
